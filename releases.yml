@@ -22,7 +22,6 @@ releases:
           metadata:
             is:
               nvr: csi-livenessprobe-container-v4.8.0-202206281335.p0.ga29b115.assembly.stream
-
         rpms: []
       rhcos:
         machine-os-content:
