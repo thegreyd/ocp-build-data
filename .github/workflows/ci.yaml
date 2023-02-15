@@ -9,7 +9,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Fetch target branch
-        run: git fetch --no-tags --progress ${{ github.base_ref }}
+        run: git fetch --no-tags --progress origin ${{ github.base_ref }}
       - name: Install validator
         run: pip3 install rh-ocp-build-data-validator
       - name: Run validator
