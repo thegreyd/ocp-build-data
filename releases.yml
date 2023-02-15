@@ -1,5 +1,5 @@
 releases:
-  ec.3:
+  ec.3: # test change
     assembly:
       basis:
         brew_event: 49661035
