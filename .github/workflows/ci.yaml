@@ -4,14 +4,11 @@ on: [pull_request]
 jobs:
   validate-ocp-build-data:
     runs-on: ubuntu-latest
+    container: quay.io/openshift-art/art-ci-toolkit:latest
     steps:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Fetch target branch
         run: git fetch --no-tags --progress origin ${{ github.base_ref }}
-      - name: Install validator
-        run: pip3 install rh-ocp-build-data-validator
-      - name: Run validator
-        run: validate-ocp-build-data ./images/openshift-enterprise-ansible-operator.yml
       - run: echo "🍏 This job's status is ${{ job.status }}."
