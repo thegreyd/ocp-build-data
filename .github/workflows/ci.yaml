@@ -6,8 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - name: Fetch target branch
-        run: git fetch --no-tags --progress -- ${{ github.server_url }}/${{ github.repository }}.git ${{ github.base_ref }}
+        run: git fetch --no-tags --progress ${{ github.base_ref }}
       - name: Install validator
         run: pip3 install rh-ocp-build-data-validator
       - name: Run validator
