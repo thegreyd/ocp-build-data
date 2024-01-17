@@ -1,4 +1,21 @@
 releases:
+  art8712:
+    assembly:
+      type: custom
+      basis:
+        assembly: "4.12.46"
+      members:
+        images:
+        - distgit_key: ose-baremetal-installer
+          metadata:
+            content:
+              source:
+                git:
+                  url: git@github.com:dtantsur/installer.git
+                  branch:
+                    target: 3f1b29de6c21b3621c34fcd3c308f579e988389e # OCPBUGS-25996-12
+            # is:
+            #   nvr: <wip>
   4.12.47:
     assembly:
       basis:
