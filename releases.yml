@@ -1,4 +1,15 @@
 releases:
+  4.13.41:
+    assembly:
+      basis:
+        assembly: "4.13.40"
+        reference_releases!: {
+          aarch64: 4.13.0-0.nightly-arm64-2024-04-04-020740,
+          ppc64le: 4.13.0-0.nightly-ppc64le-2024-04-04-020739,
+          s390x: 4.13.0-0.nightly-s390x-2024-04-04-020731,
+          x86_64: 4.13.0-0.nightly-2024-04-04-020752
+        }
+      type: standard
   4.13.40:
     assembly:
       basis:
