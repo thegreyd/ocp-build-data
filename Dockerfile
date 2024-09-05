@@ -2,6 +2,9 @@
 FROM bootc
 
 USER root
-RUN dnf upgrade -y  \
- && dnf clean all
+# workaround for RHEL-39796 
+RUN mv /etc/selinux /etc/selinux.tmp && \
+    dnf upgrade -y && \
+    dnf clean all && \
+    mv /etc/selinux.tmp /etc/selinux
 USER 1001
