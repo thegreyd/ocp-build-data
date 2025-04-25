@@ -6,6 +6,10 @@ releases:
         reference_releases:
           x86_64: 4.19.0-0.nightly-2025-04-14-214145
       group:
+        shipments:
+          - url: N/A
+            advisory_templates:
+            - image
         advisories:
           extras: 144054
           image: 144055
