@@ -11,6 +11,7 @@ releases:
             advisories:
             - kind: image
               live_id: 1440
+            - kind: extras
         advisories:
           extras: 144054
           image: 144055
