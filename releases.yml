@@ -7,7 +7,7 @@ releases:
           x86_64: 4.19.0-0.nightly-2025-04-14-214145
       group:
         shipments:
-          - url: N/A
+          - url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/19
             advisories:
             - kind: image
               live_id: 1440
