@@ -8,8 +8,8 @@ releases:
       group:
         shipments:
           - url: N/A
-            advisory_templates:
-            - image
+            advisories:
+            - kind: image
         advisories:
           extras: 144054
           image: 144055
