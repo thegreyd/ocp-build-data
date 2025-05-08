@@ -9,10 +9,10 @@ releases:
         shipments:
           - url: https://gitlab.cee.redhat.com/hybrid-platforms/art/ocp-shipment-data/-/merge_requests/19
             advisories:
-            - kind: image
-              live_id: 1440
-            - kind: extras
-              live_id: 4292
+              - kind: image
+                live_id: 1440
+              - kind: extras
+                live_id: 4292
         advisories:
           extras: 144054
           image: 144055
