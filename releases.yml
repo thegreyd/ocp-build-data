@@ -14,11 +14,7 @@ releases:
             - kind: extras
               live_id: 4292
         advisories:
-          extras: 144054
-          image: 144055
-          metadata: 147145
           microshift: 144057
-          prerelease: 148424
           rpm: 147146
         operator_index_mode: pre-release
         release_jira: ART-11625
