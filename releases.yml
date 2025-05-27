@@ -5,7 +5,7 @@ releases:
         reference_releases:
           aarch64: 4.18.0-0.konflux-nightly-arm64-2025-04-24-065555
           x86_64: 4.18.0-0.konflux-nightly-2025-04-24-065624
-        time: 2025-04-24 05:59:34+00:00
+        time: "2025-04-24 05:59:34+00:00"
       group:
         shipment:
           advisories:
