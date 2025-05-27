@@ -13,7 +13,6 @@ releases:
               live_id: 1440
             - kind: extras
               live_id: 4292
-          url: https://gitlab.cee.redhat.com/sidsharm/ocp-shipment-data/-/merge_requests/3
         advisories:
           microshift: 144057
           rpm: 147146
