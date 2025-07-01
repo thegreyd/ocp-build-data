@@ -1,4 +1,42 @@
 releases:
+  ec.99: # for testing, should not be merged in main release branch
+    assembly:
+      type: preview
+      basis:
+        time: "2025-07-01T01:13:58+00:00"
+        reference_releases:
+          x86_64: 4.20.0-0.nightly-2025-07-01-051543
+      group:
+        advisories:
+          rpm: 149403
+          prerelease: 151267
+        release_jira: ART-12824
+        operator_index_mode: pre-release
+        shipment:
+          advisories:
+            - kind: image
+              live_id: 9562
+            - kind: extras
+              live_id: 9563
+            - kind: metadata
+              live_id: 9564
+        upgrades: 4.19.0,4.19.1,4.19.2,4.20.0-ec.0,4.20.0-ec.2,4.20.0-ec.3
+      rhcos:
+        rhel-coreos:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:e600abcc868f2c09a6bb62182fe5b6665993e2c64a26d7790b34f1d718e8b27f
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:dd20c755cc539e61002abb73e5c0213c94f4186164d11e9555dd9b594d5e1922
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:88f3700d7f54828b028e786512fcce6dc111b4da2ed29983f0409c4dd665f9c1
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:6064a2c018f06dbf3cb757b92bfe10185d1d300ada92f3ce69c0fc3bbd7d8a7f
+        rhel-coreos-extensions:
+          images:
+            x86_64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:41a35ff86ad19f3a3917938bc9eec37c7913d4db9c975b5da254fa5105a25072
+            aarch64: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:13ca3d5ddb33b4cf4cc21f12e72e58444475c205e3de26646e318027a2f1bc21
+            s390x: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:22e7fb4e4613f620b722334bc9223055a2971ba8b2b7775a88ab34c7b20b3c87
+            ppc64le: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:4042ac21333cb1b6c3596d717d96bd35f43166e0c00261258aabcf129beac202
+      members:
+        rpms: []
+        images: []
   ec.3:
     assembly:
       type: preview
