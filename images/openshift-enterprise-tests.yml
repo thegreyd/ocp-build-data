@@ -1,6 +1,6 @@
 content:
   source:
-    dockerfile: images/tests/Dockerfile.rhel
+    dockerfile: images/tests/Dockerfile.rhel.foo
     git:
       branch:
         target: release-{MAJOR}.{MINOR}
